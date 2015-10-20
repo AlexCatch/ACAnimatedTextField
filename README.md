@@ -26,3 +26,6 @@ demoTextField.activeColour = UIColor.redColor()
 demoTextField.inactiveColour = UIColor.greenColor()
 demoTextField.textFieldImage = UIImage(named: "locked")
 ```
+
+### License
+ACAnimatedTextField is under the MIT license. Please check out LICENSE.md for more information
