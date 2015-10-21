@@ -9,7 +9,7 @@ ACAnimatedTextField is one file, simply drag and drop `ACAnimatedTextField/ACAni
 ![Preview](misc/preview.gif)
 
 ##Customization
-3 things are currently able to be customized.
+4 things are currently able to be customized.
 
 - Image
 - Active colour
