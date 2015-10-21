@@ -34,12 +34,6 @@
                                         <color key="value" red="0.1831153143" green="0.39283136359999998" blue="0.2728380715" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="image" keyPath="textFieldImage" value="locked"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="imageWidth">
-                                        <integer key="value" value="32"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="imageHeight">
-                                        <integer key="value" value="32"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                         </subviews>
