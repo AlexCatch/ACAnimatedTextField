@@ -26,6 +26,21 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="activeColour">
+                                        <color key="value" red="0.84745173429999998" green="0.086683803300000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="inactiveColour">
+                                        <color key="value" red="0.1831153143" green="0.39283136359999998" blue="0.2728380715" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="textFieldImage" value="locked"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageWidth">
+                                        <integer key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageHeight">
+                                        <integer key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                         </subviews>
                         <animations/>
@@ -45,4 +60,7 @@
             <point key="canvasLocation" x="305" y="399"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="locked" width="64" height="65"/>
+    </resources>
 </document>

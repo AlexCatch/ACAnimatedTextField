@@ -11,7 +11,8 @@ import UIKit
 class ACAnimatedTextField: UITextField {
     
     //Global reference to the uiimageview
-    private var textFieldImageView: UIImageView!
+    //Default frame of image, can be customized
+    private var textFieldImageView: UIImageView = UIImageView(frame: CGRectMake(0, 0, 24, 24))
     @IBInspectable var textFieldImage: UIImage? {
         
         didSet {
@@ -21,6 +22,19 @@ class ACAnimatedTextField: UITextField {
     }
     @IBInspectable var activeColour: UIColor?
     @IBInspectable var inactiveColour: UIColor?
+    
+    @IBInspectable var imageWidth: NSNumber? {
+        didSet {
+            textFieldImageView.frame.size.width = CGFloat(imageWidth!)
+            
+        }
+    }
+    @IBInspectable var imageHeight: NSNumber? {
+        didSet {
+            textFieldImageView.frame.size.height = CGFloat(imageHeight!)
+            
+        }
+    }
     
     //called after init, when the rect of the textfield is being drawing
     override func drawRect(rect: CGRect) {
@@ -66,12 +80,10 @@ class ACAnimatedTextField: UITextField {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        //set the frame of the uiimageview
-        textFieldImageView = UIImageView(frame: CGRectMake(0, 0, 24, 24))
-        
         //I didn't want to interfere with delegates so the user can use the built in delegates so I'll use targets instead
         self.addTarget(self, action: "didBeginEditing", forControlEvents: UIControlEvents.EditingDidBegin)
         self.addTarget(self, action: "didEndEditing", forControlEvents: UIControlEvents.EditingDidEnd)
+        
     }
     
     func didBeginEditing() {

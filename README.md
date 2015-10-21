@@ -14,18 +14,25 @@ ACAnimatedTextField is one file, simply drag and drop `ACAnimatedTextField/ACAni
 - Image
 - Active colour
 - Inactive colour
+- Size of UIImageView
 
-You can either set them via code or in the IB
+You can either set them via code or user attributes
 
 ### Interface Builder
-![IBScreenshot](misc/IBScreenshot.png)
+![userAttributes](misc/IBScreenshot.png)
 
 ### Code
 ```swift
 demoTextField.activeColour = UIColor.redColor()
 demoTextField.inactiveColour = UIColor.greenColor()
 demoTextField.textFieldImage = UIImage(named: "locked")
+demoTextField.imageWidth = 24
+demoTextField.imageHeight = 24
 ```
+
+## Todo
+
+- [ ] Make textRect change based on size of UIImageView
 
 ## License
 ACAnimatedTextField is under the MIT license. Please check out LICENSE.md for more information

@@ -21,10 +21,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         demoTextField.textColor = self.view.backgroundColor
         demoTextField.delegate = self
         
+        //demoTextField.textFieldImageViewFrame = CGRectMake(10, 10, 32, 32)
         
-        demoTextField.activeColour = UIColor.redColor()
-        demoTextField.inactiveColour = UIColor.greenColor()
-        demoTextField.textFieldImage = UIImage(named: "locked")
     }
 
     override func didReceiveMemoryWarning() {
