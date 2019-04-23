@@ -8,7 +8,7 @@ ACAnimatedTextField is one file, simply drag and drop `ACAnimatedTextField/ACAni
 ## Preview
 ![Preview](misc/preview.gif)
 
-##Customization
+## Customization
 4 things are currently able to be customized.
 
 - Image
